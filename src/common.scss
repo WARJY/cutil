@@ -1,0 +1,129 @@
+/*flex类*/
+.flex-cc {display: flex;justify-content: center;align-items: center;}
+.flex-row {display: flex;flex-direction: row;justify-content: flex-start;align-items: flex-start;}
+.flex-col {display: flex;flex-direction: column;justify-content: flex-start;align-items: flex-start;}
+.main-center {justify-content: center !important;}
+.main-start {justify-content: flex-start !important;}
+.main-end {justify-content: flex-end !important;}
+.vice-center {align-items: center !important;}
+.vice-start {align-items: flex-start !important;}
+.vice-end {align-items: flex-end !important;}
+.self-center {align-self: center !important;}
+.self-start {align-self: flex-start !important;}
+.self-end {align-self: flex-end !important;}
+.flex1{flex: 1;}
+.flex1.limit-width{width: 0;}
+.flex1.limit-height{height: 0;}
+
+/*容器*/
+.container{width: 100%;background-color: #f5f5f5;position: relative;display: flex;flex-direction: column;justify-content: flex-start;align-items: center;box-sizing: border-box;}
+/* .cell{width: 100%;padding: 15px;background-color: #fff;box-sizing: border-box;margin-top: 10px;} */
+.full-width{width: 100%;box-sizing: border-box;position: relative;}
+
+/*宽度*/
+.w100{width: 100px !important;}
+.w200{width: 200px !important;}
+
+/*对齐*/
+.t-left{text-align: left;}
+.t-right{text-align: right;}
+.t-center{text-align: center;}
+
+/*颜色*/
+.c-000{color: #000;}
+.c-333{color: #333;}
+.c-666{color: #666;}
+.c-999{color: #999;}
+.c-fff{color: #fff;}
+.c-e6{color: #e6e6e6;}
+.c-f5{color: #f5f5f5;}
+
+/* 字体 */
+.f12{font-size: 12px;}
+.f14{font-size: 14px;}
+.f16{font-size: 16px;}
+.f18{font-size: 18px;}
+.f20{font-size: 20px;}
+.f22{font-size: 22px;}
+.f24{font-size: 24px;}
+.f28{font-size: 26px;}
+.f28{font-size: 28px;}
+.f30{font-size: 30px;}
+.f32{font-size: 32px;}
+.f36{font-size: 36px;}
+.f40{font-size: 40px;}
+.f42{font-size: 42px;}
+.bold{font-weight: bold;}
+
+/* 背景颜色 */
+.bg-000{background-color: #000;}
+.bg-fff{background-color: #fff;}
+.bg-f5{background-color: #f5f5f5;}
+.bg-e6{background-color: #e6e6e6;}
+
+/* margin */
+.m0{margin: 0px !important;}
+.m10{margin: 10px !important;}
+.mt0{margin-top: 0px !important;}
+.mt10{margin-top: 10px !important;}
+.mt15{margin-top: 15px !important;}
+.mt30{margin-top: 30px !important;}
+.mr0{margin-right: 0px !important;}
+.mr10{margin-right: 10px !important;}
+.mr15{margin-right: 15px !important;}
+.mr30{margin-right: 30px !important;}
+.mb0{margin-bottom: 0px !important;}
+.mb10{margin-bottom: 10px !important;}
+.mb15{margin-bottom: 15px !important;}
+.mb30{margin-bottom: 30px !important;}
+.ml0{margin-left: 0px !important;}
+.ml10{margin-left: 10px !important;}
+.ml15{margin-left: 15px !important;}
+.ml30{margin-left: 30px !important;}
+
+/* padding */
+.p0{padding: 0px !important;}
+.p10{padding: 10px !important;}
+.pt0{padding-top: 0px !important;}
+.pt10{padding-top: 10px !important;}
+.pt15{padding-top: 15px !important;}
+.pt30{padding-top: 30px !important;}
+.pr0{padding-right: 0px !important;}
+.pr10{padding-right: 10px !important;}
+.pr15{padding-right: 15px !important;}
+.pr30{padding-right: 30px !important;}
+.pb0{padding-bottom: 0px !important;}
+.pb10{padding-bottom: 10px !important;}
+.pb15{padding-bottom: 15px !important;}
+.pb30{padding-bottom: 30px !important;}
+.pl0{padding-left: 0px !important;}
+.pl10{padding-left: 10px !important;}
+.pl15{padding-left: 15px !important;}
+.pl30{padding-left: 30px !important;}
+
+/*鼠标指针*/
+.pointer{cursor: pointer;}
+/*换行*/
+.warp{word-wrap: break-word; word-break: normal; }
+/*超出隐藏*/
+.no-warp{overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+/*滚动*/
+.scroll-y{overflow-y: scroll;}
+.scroll-y::-webkit-scrollbar{width: 0px;}
+/*过渡*/
+.transition-hover{transition: transform 100ms ease;}
+
+/*css regist*/
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,dl,dd,form,fieldset,legend,input,textarea,select {margin: 0;padding: 0;}
+body {margin: 0;padding: 0;}
+a {text-decoration: none;}
+a:hover {text-decoration: none;}
+em {font-style: normal;}
+li {list-style-type: none;}
+img {border: 0;vertical-align: middle;}
+table {border-collapse: collapse;border-spacing: 0;}
+p {word-wrap: break-word;}
+input{outline: none;border: none;}
+button{outline: none;border: none;}
+button::after{border: none;}
+ul, menu, dir, li {    display: block;    margin-block-start: 0px;    margin-block-end: 0px;    margin-inline-start: 0px;    margin-inline-end: 0px;    padding-inline-start: 0px;outline: none;}

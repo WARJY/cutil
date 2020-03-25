@@ -1,0 +1,39 @@
+{
+  "author": {
+    "name": "gcc"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ]
+  },
+  "bundleDependencies": [],
+  "dependencies": {},
+  "deprecated": false,
+  "description": "the most useful utils for javascript",
+  "devDependencies": {
+    "@babel/preset-env": "^7.5.5",
+    "babel-jest": "^24.8.0",
+    "jest": "^24.8.0",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6"
+  },
+  "jest": {
+    "testRegex": "/test/.*.test.jsx?$"
+  },
+  "license": "ISC",
+  "main": "index.js",
+  "name": "cutil",
+  "scripts": {
+    "build": "webpack",
+    "test": "jest"
+  },
+  "version": "1.1.4"
+}
