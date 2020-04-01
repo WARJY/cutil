@@ -1,41 +1,49 @@
 function Public() {
-  this.handlers = {};
+    this.handlers = {};
 }
 
 Public.prototype = {
     // 订阅事件
-    on: function(eventType, handler){
-        var self = this;
-        if(!(eventType in self.handlers)) {
-           self.handlers[eventType] = [];
+    on: function (eventType, handler) {
+        if (!(eventType in this.handlers)) {
+            this.handlers[eventType] = [];
         }
-        self.handlers[eventType].push(handler);
+        this.handlers[eventType].push(handler);
         return this;
     },
-     // 触发事件(发布事件)
-    emit: function(eventType){
-       var self = this;
-       var handlerArgs = Array.prototype.slice.call(arguments,1);
-       for(var i = 0; i < self.handlers[eventType].length; i++) {
-         self.handlers[eventType][i].apply(self,handlerArgs);
-       }
-       return self;
+    // 只触发一次
+    once: function (eventType, handler) {
+        handler.once = true
+        return this.on(eventType, handler)
+    },
+    // 触发事件(发布事件)
+    emit: function (eventType) {
+        let handlerArgs = Array.prototype.slice.call(arguments, 1);
+        for (let i = 0; i < this.handlers[eventType].length; i++) {
+            this.handlers[eventType][i].apply(this, handlerArgs);
+            if(this.handlers[eventType][i].once === true) this.off(eventType, this.handlers[eventType][i])
+        }
+        return this;
     },
     // 删除订阅事件
-    off: function(eventType, handler){
-        var currentEvent = this.handlers[eventType];
-        var len = 0;
+    off: function (eventType, handler) {
+        let currentEvent = this.handlers[eventType];
+        let len = 0;
         if (currentEvent) {
             len = currentEvent.length;
-            for (var i = len - 1; i >= 0; i--){
-                if (currentEvent[i] === handler){
+            for (let i = len - 1; i >= 0; i--) {
+                if (currentEvent[i] === handler) {
                     currentEvent.splice(i, 1);
                 }
             }
         }
         return this;
+    },
+    // 获取订阅列表
+    isSubed(eventType, handler){
+        return this.handlers[eventType].indexOf(handler) > -1
     }
 };
- 
+
 let emitter = new Public()
 module.exports = emitter
