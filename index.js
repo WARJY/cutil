@@ -6,14 +6,12 @@ const emitter = require('./src/emitter.js')
 const easing = require('./src/easing.js')
 const parseUrl = require('./src/parseUrl.js')
 
-let Modal = {}
 let storage = {}
 let wxAsync = {}
 
 //引入不同环境的工具包
 try{storage = require('./src/storage.js')}catch(e){}
 try{wxAsync = require('./src/wxAsync.js')}catch(e){}
-try{Modal = require('./src/modal.vue')}catch(e){}
 
 module.exports = {
 	date: date,
@@ -22,7 +20,6 @@ module.exports = {
 	multiExtend : multiExtend,
 	storage : storage,
 	wxAsync : wxAsync,
-	Modal : Modal,
 	emitter : emitter,
 	easing : easing,
 	parseUrl : parseUrl
