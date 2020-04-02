@@ -22,5 +22,6 @@ describe('test util functions', () => {
 		//取消订阅
 		emitter.off("testOn", onFun)
 		emitter.emit("testOn")
+		console.log(emitter.isSubed("testOn", onFun))
 	})
 })
