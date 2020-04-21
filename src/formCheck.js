@@ -38,6 +38,7 @@ const formCheck = function(target,rule){
 		let currentRule = rule[currentField]
 		//格式化规则为数组
 		if(is(currentRule) === String) currentRule = [currentRule]
+		if(is(currentRule) === Function) currentRule = currentRule.call(this)
 		let currentRes = currentRule.map(r=>{
 			//字符串规则
 			if(is(r) === String){
