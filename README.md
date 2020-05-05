@@ -165,15 +165,4 @@ cutil是一款无任何依赖，非常实用的工具包，涵盖完美多继承
 
 			let query = parseUrl(url)
 
-- qrcodes(option)
-
-	批量生成二维码（仅在浏览器环境可下载）
-
-			let option = {
-				nameList: ["A", "B", "C"],
-				dataList: [
-					"code=1576206365852a53be6e0f7da7e8c7d965f1b3ea831e2", "code=1576206365852a53be6e0f7da7e8c7d965f1b3ea831e2", "code=1576206365852a53be6e0f7da7e8c7d965f1b3ea831e2"],
-				timeOut: 1000
-			}
-			qrcodes(option)
 
