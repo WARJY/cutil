@@ -5,6 +5,7 @@ const multiExtend = require('./src/multiExtend.js')
 const emitter = require('./src/emitter.js')
 const easing = require('./src/easing.js')
 const parseUrl = require('./src/parseUrl.js')
+const session = require('./src/session.js')
 
 let storage = {}
 let wxAsync = {}
@@ -22,5 +23,6 @@ module.exports = {
 	wxAsync : wxAsync,
 	emitter : emitter,
 	easing : easing,
-	parseUrl : parseUrl
+	parseUrl : parseUrl,
+	session : session
 }

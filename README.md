@@ -15,7 +15,7 @@ cutil是一款无任何依赖，非常实用的工具包，涵盖完美多继承
 - easing		共30种不同的缓动方法
 - emitter		一个实用的订阅者类
 - parseUrl		url格式化工具
-- qrcodes		二维码批量生成工具
+- session		基于axios的js爬虫工具
 
 ## 快速启动
 
@@ -165,4 +165,10 @@ cutil是一款无任何依赖，非常实用的工具包，涵盖完美多继承
 
 			let query = parseUrl(url)
 
+- session(Class)
 
+	- setSession(option:AxiosOptions)<br>
+			发送axios请求并记录cookies
+	
+	- request(option:AxiosOptions)<br>
+			使用setSession记录的cookie发送axios请求
