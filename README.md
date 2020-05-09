@@ -16,6 +16,7 @@ cutil是一款无任何依赖，非常实用的工具包，涵盖完美多继承
 - emitter		一个实用的订阅者类
 - parseUrl		url格式化工具
 - session		基于axios的js爬虫工具
+- unit			价格单位转换工具
 
 ## 快速启动
 
@@ -172,3 +173,12 @@ cutil是一款无任何依赖，非常实用的工具包，涵盖完美多继承
 	
 	- request(option:AxiosOptions)<br>
 			使用setSession记录的cookie发送axios请求
+
+- unit(Object)
+
+	- toCent(yuan, fixed=0)<br>
+			输入元，返回分，默认保留0位小数
+	
+	- toYuan(cent, fixed=2)<br>
+			输入分，返回元，默认保留2位小数
+
