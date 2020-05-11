@@ -3,20 +3,21 @@
 cutil是一款无任何依赖，非常实用的工具包，涵盖完美多继承，时间格式化，类型判断，表单验证，本地存储等常用的web开发工具方法 <br>
 使用es6编写，支持浏览器打包调用，包含完整的单元测试
 
-## 目前共11个工具，包括
+## 目前共13个工具，包括
 
-- is			准确的类型判断方法
-- multiExtend	完美多继承，完美支持Function Class，ES6 Class
-- formCheck		表单验证方法，简单实用
-- date			时间格式化方法，支持时间戳，字符串等多种形式调用
-- wxAsync		微信小程序API的Promise封装
-- storage		基于现代浏览器的storage工具类
-- commonCss		基于现代浏览器的实用css工具类,包含scss
-- easing		共30种不同的缓动方法
-- emitter		一个实用的订阅者类
-- parseUrl		url格式化工具
-- session		基于axios的js爬虫工具
-- unit			价格单位转换工具
+- [is](https://github.com/WARJY/cutil/tree/master/src/is.js) 准确的类型判断方法
+- [multiExtend](https://github.com/WARJY/cutil/tree/master/src/multiExtend.js) 完美多继承，完美支持Function Class，ES6 Class
+- [formCheck](https://github.com/WARJY/cutil/tree/master/src/formCheck.js) 表单验证方法，简单实用
+- [date](https://github.com/WARJY/cutil/tree/master/src/date.js) 时间格式化方法，支持时间戳，字符串等多种形式调用
+- [wxAsync](https://github.com/WARJY/cutil/tree/master/src/wxAsync.js) 微信小程序API的Promise封装
+- [storage](https://github.com/WARJY/cutil/tree/master/src/storage.js) 基于现代浏览器的storage工具类
+- [commonCss](https://github.com/WARJY/cutil/tree/master/src/common.scss) 基于现代浏览器的实用css工具类,包含scss
+- [easing](https://github.com/WARJY/cutil/tree/master/src/easing.js) 共30种不同的缓动方法
+- [emitter](https://github.com/WARJY/cutil/tree/master/src/emitter.js) 一个实用的订阅者类
+- [parseUrl](https://github.com/WARJY/cutil/tree/master/src/parseUrl.js) url格式化工具
+- [session](https://github.com/WARJY/cutil/tree/master/src/session.js) 基于axios的js爬虫工具
+- [unit](https://github.com/WARJY/cutil/tree/master/src/unit.js) 价格单位转换工具
+- [hooks](https://github.com/WARJY/cutil/tree/master/src/hooks/md/hooks.md) 基于vue-composition-api的hooks
 
 ## 快速启动
 
