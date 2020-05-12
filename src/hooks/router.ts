@@ -3,6 +3,10 @@ import { SetupContext } from '@vue/composition-api'
 
 export function useRouter(context:SetupContext){
 
+    const refresh:Function = function(){
+        context.root.$router.go(0)
+    }
+
     const back:Function = function(){
         context.root.$router.go(-1)
     }
@@ -23,6 +27,7 @@ export function useRouter(context:SetupContext){
     }
 
     return {
+        refresh,
         back,
         replace,
         push,

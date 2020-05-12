@@ -52,7 +52,7 @@ const useFormOptionsFieldsTest: useFormOptionsFieldsTest = {
     email: ref(""),
 }
 
- const { reset, valid, commit } = useForm({
+const { reset, valid, commit } = useForm({
     fields: useFormOptionsFieldsTest,
     //规则基于formCheck工具
     valid: {
