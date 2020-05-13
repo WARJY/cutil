@@ -6,6 +6,7 @@ const emitter = require('./src/emitter.js')
 const easing = require('./src/easing.js')
 const parseUrl = require('./src/parseUrl.js')
 const session = require('./src/session.js')
+const unit = require('./src/unit.js')
 
 let storage = {}
 let wxAsync = {}
@@ -24,5 +25,6 @@ module.exports = {
 	emitter : emitter,
 	easing : easing,
 	parseUrl : parseUrl,
-	session : session
+	session : session,
+	unit: unit
 }
