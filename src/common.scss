@@ -143,10 +143,10 @@
 }
 
 // 字体字号
-@mixin font($fontSize, $color, $ellipsis：100){
+@mixin font($fontSize, $color, $clamp:100 ){
     font-size: $fontSize;
     color: $color;
-    @include ellipsis($ellipsis);
+    @include ellipsis($clamp);
 }
 
 //按钮
