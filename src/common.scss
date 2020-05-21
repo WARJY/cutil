@@ -115,17 +115,27 @@
 
 //flex容器
 @mixin flex($direction, $main:flex-start, $vice:flex-start){
-    display: flex;
+    display: flex !important;
     flex-direction: $direction;
     justify-content: $main;
     align-items: $vice;
 }
 
 // 定宽定高
-@mixin wh($width, $height){
+@mixin wh($width, $height, $radius){
     width: $width;
     height: $height;
     box-sizing: border-box;
+    border-radius: $radius;
+}
+
+// 定位
+@mixin position($position:absolute, $top, $right, $bottom, $left){
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
 }
 
 //换行
@@ -210,4 +220,3 @@ p {word-wrap: break-word;}
 input{outline: none;border: none;}
 button{outline: none;border: none;margin: 0;padding: 0;background: none;}
 button::after{border: none;}
-ul, menu, dir, li {    display: block;    margin-block-start: 0px;    margin-block-end: 0px;    margin-inline-start: 0px;    margin-inline-end: 0px;    padding-inline-start: 0px;outline: none;}
