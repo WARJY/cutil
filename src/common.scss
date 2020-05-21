@@ -129,15 +129,6 @@
     border-radius: $radius;
 }
 
-// 定位
-@mixin position($position:absolute, $top, $right, $bottom, $left){
-    position: $position;
-    top: $top;
-    right: $right;
-    bottom: $bottom;
-    left: $left;
-}
-
 //换行
 @mixin ellipsis($clamp: 1){
     overflow: hidden;
