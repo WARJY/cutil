@@ -137,7 +137,6 @@
         white-space: nowrap;
     }@else{
         text-overflow: ellipsis;
-        display: -webkit-box;
         -webkit-line-clamp: $clamp;
         -webkit-box-orient: vertical;
     }
